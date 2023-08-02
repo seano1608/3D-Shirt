@@ -60,7 +60,7 @@ const Customizer = () => {
       // Call backend to generate AI image
       setGeneratingImg(true);
 
-      const response = await fetch(config.production.backendUrl, {
+      const response = await fetch("https://threed-ai-shirt-wjo1.onrender.com/api/v1/dalle", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
